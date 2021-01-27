@@ -260,7 +260,14 @@ $(function(){
 })
 
 function updateQuestion(round){
-    $("#choices_container").html("")
+    $("#choices_container").html("");
+    var fillRound = round+1;
+    if(round+1 <10){
+        fillRound = "0"+fillRound;
+    }
+    $(".dot").removeClass("active");
+    $("#progress").children().find(".dot").eq(round).addClass("active");
+    $("#questionImage").attr("src","src/assets/thumbnail-"+fillRound+".png");
     $("#questionText").html(questions[round].question);
     for(i=0;i<questions[round].choices.length;i++){
         var choiceNode = "<div class='choice' data-score='"+questions[round].choices[i].score+"'>"+questions[round].choices[i].choiceText+"</div>";
@@ -269,15 +276,37 @@ function updateQuestion(round){
 
     }
     $(".choice").click(function(){
-        round++;
+
         score = score + parseInt($(this).attr("data-score"));
-        updateQuestion(round);
+       
         if(round == 11){
             checkResult(score);
+        }else{
+            round++;
+            updateQuestion(round);
         }
+
     })
 }
 function checkResult(score){
+    var risk;
+    if(score<=63){
+        risk = 1;
+        $("#riskLevel").html("低");
+        $("#riskLevel").addClass("low");
+        $("#resultText").html("<p>您對性健康問題有深入了解 / 性行為風險較低。不論您在性行為時有沒有使用安全套，青鳥都建議定期進行性病 / 愛滋病快速測試 (一般是每三個月檢查一次)</p>");
+    }else if(score<=91){
+        risk = 2;
+        $("#riskLevel").html("中");
+        $("#riskLevel").addClass("mid");
+        $("#resultText").html("<p>您對性健康問題略知一二 / 性行為習慣仍存在風險，了解更多可按此。青鳥建議如曾發生過不安全性行為，應儘快安排進行性病 / 愛滋病快速測試。如你有多位性伴侶，不論有沒有使用安全套，亦應每三個月進行定期檢查，以確保健康。</p><p>如你是女性性工作者，也可預約到青鳥到訪中心進行愛滋病 / 梅毒病毒測試，費用全免亦不需要真名登記，詳情按此。</p>");
+    }else if(score>=92){
+        risk = 3;
+        $("#riskLevel").html("高");
+        $("#riskLevel").addClass("high");
+        $("#resultText").html("<p>您對性健康知識不足 / 性行為風險極高，需要多多了解。青鳥建議，如曾發生過不安全性行為，應儘快安排進行性病 / 愛滋病快速測試。如你有多位性伴侶，不論有沒有使用安全套，亦應每三個月進行定期檢查，以確保健康。</p><p>如你是女性性工作者，也可預約到青鳥到訪中心進行愛滋病 / 梅毒病毒測試，費用全免亦不需要真名登記，詳情按此。</p>");
+    }
+    $("#resultImage").attr("src","src/assets/result-"+risk+".png")
     $("#question").hide();
     $("#choices").hide();
     $("#progress").hide();

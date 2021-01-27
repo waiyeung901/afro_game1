@@ -14,14 +14,52 @@
         </div>
         <div id="game_screen" class="page">
             <div id="game_screen_wrapper">
-                <div id="question" class=""><div id="questionText" class="flex"></div></div>
+                <div id="question" class="">
+                    <div id="questionContent" class="flex">
+                        <div>
+                            <div id="questionImageContainer"><img id="questionImage" src="src/assets/thumbnail-01.png"/></div>
+                            <div id="questionText"></div>
+                        </div>
+
+                    </div>
+                    
+                </div>
                 <div id="choices" class="">
                     <div class="flex">
                         <div id="choices_container" class=""></div>
                     </div>
                 </div>
-                <div id="progress" class="object"></div>
-                <div id="result" class="page"></div>
+                <div id="progress">
+                    <div class="flex">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <img id="progress_result_text"src="src/assets/result-title.png"/>
+                    </div>
+                </div>
+                <div id="result" class="page">
+                    
+                    <div id="resultContent" class="flex">
+                        <div>
+                            <img id="result_title_text"src="src/assets/result-title.png"/>
+                            <div id="resultImageContainer"><img id="resultImage" src=""/></div>
+                            <div id="riskText">風險<span id="riskLevel"></span></div>
+                            <div id="resultText">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
         </div>
