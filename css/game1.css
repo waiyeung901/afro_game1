@@ -9,7 +9,7 @@ body{
     /*background-image: url(../src/Game1-design1/render/game1-01.jpg);*/
     background-size: cover;
     width:480px;
-    height:720px;
+    height:100%;
     background-color:#FFF2AC;
     color:#7E4C0A;
     font-family: 'cwTeXYen'!important;
