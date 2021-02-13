@@ -10,7 +10,7 @@ body{
     border:0;
     /*background-image: url(../src/Game1-design1/render/game1-01.jpg);*/
     background-size: cover;
-    width:480px;
+    width:100%;
     height:100%;
     background-color:#FFF2AC;
     color:#7E4C0A;
@@ -28,8 +28,8 @@ img{
     max-width: 100%;
 }
 .page{
-    width:480px;
-    height:720px;
+    width:100%;
+    height:100%;
     display: block;
     position: absolute;
     background-color:#FFF2AC;
@@ -74,7 +74,7 @@ img{
 }
 #question{
 
-    height:290px;
+    height:40%;
     font-size: 24px;
     border-bottom: 2px solid #FDC558;
     background-color: rgba(256, 256, 256, 0.5);
@@ -123,7 +123,7 @@ img{
 }
 #questionImageContainer,#resultImageContainer{
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 2%;
 }
 #questionImage,#resultImage{
     width:60%;
