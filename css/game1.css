@@ -99,9 +99,8 @@ img{
     padding: 20px;
     cursor: pointer;
     width: 100%;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
+    border-width: 0;
+    border: none;
     border-bottom: 2px solid #DFE0E1;
     color: #7E4C0A;
     font-size: 24px;
@@ -111,8 +110,9 @@ img{
     outline: none;
 }
 
-button:hover{
+button.choice:hover{
     background-color: #f5f5f5;
+    cursor: pointer;
 }
 
 #result{
