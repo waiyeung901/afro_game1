@@ -89,7 +89,6 @@ img{
 }
 #choices{
     height:390px;
-    font-size: 24px;
     border-top: 2px solid #fff;
 }
 .choice {
@@ -99,8 +98,9 @@ img{
     padding: 20px;
     cursor: pointer;
     width: 100%;
-    border-width: 0;
-    border: none;
+    border-top: 2px solid #fff;
+    border-left: 0;
+    border-right: 0;
     border-bottom: 2px solid #DFE0E1;
     color: #7E4C0A;
     font-size: 24px;
@@ -108,11 +108,6 @@ img{
     font-weight: bold;
     font-style: normal;
     outline: none;
-}
-
-button.choice:hover{
-    background-color: #f5f5f5;
-    cursor: pointer;
 }
 
 #result{
