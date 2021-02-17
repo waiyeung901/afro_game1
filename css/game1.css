@@ -99,8 +99,10 @@ img{
     padding: 20px;
     cursor: pointer;
     width: 100%;
-    border-width: 0;
-    border-bottom: 2px solid #DFE0E1 !important;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #DFE0E1;
     color: #7E4C0A;
     font-size: 24px;
     font-family: 'cwTeXYen'!important;
