@@ -3,7 +3,7 @@ var round = 0;
 var questions = [
     {
         "id":1,
-        "question":"最近三個月是否每一次性行為都有使用安全套(包恬口交、陰道性交、肛交)?",
+        "question":"最近三個月是否每一次性行為都有使用安全套(包括口交、陰道性交、肛交)?",
         "choices":[
             {
                 "choiceText":"是",
@@ -101,11 +101,11 @@ var questions = [
                 "score":10
             },
             {
-                "choiceText":"檢測結果為陽性",
+                "choiceText":"空窗期後檢測結果為陽性",
                 "score":3
             },
             {
-                "choiceText":"檢測結果為陰性",
+                "choiceText":"空窗期後檢測結果為陰性",
                 "score":10
             }
 
@@ -205,7 +205,7 @@ var questions = [
     },
     {
         "id":11,
-        "question":"以下哪一項潤滑劑(KY)<span style=color:red;>不可以</span>與乳膠製安全套一起使用?",
+        "question":"以下哪一項潤滑劑<span style=color:red;>不可以</span>與乳膠製安全套一起使用?",
         "choices":[
             {
                 "choiceText":"水性",
@@ -294,7 +294,7 @@ function checkResult(score){
         risk = 1;
         $("#riskLevel").html("低");
         $("#riskLevel").addClass("low");
-        $("#resultText").html("<p>您對性健康問題有深入了解 / 性行為風險較低。記得每次性行為都使用安全套，而不論您在性行為時有沒有使用安全套，青鳥都建議定期進行性病 / 愛滋病快速測試 (一般是每三個月檢查一次)。</p>");
+        $("#resultText").html("<p>您對性健康問題有深入了解 / 性行為風險較低。記得每次性行為都使用安全套，而不論您在性行為時有沒有使用安全套，青鳥都建議定期進行性病 / 愛滋病快速測試 (一般是每三個月檢查一次)。<a href=#>了解更多</a></p>");
     }else if(score<=91){
         risk = 2;
         $("#riskLevel").html("中");
