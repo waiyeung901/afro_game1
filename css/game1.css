@@ -98,7 +98,7 @@ img{
     padding: 20px;
     cursor: pointer;
     width: 100%;
-    border-width: 0 0 1px 0;
+    border-width: 1px 0 1px 0;
     border-color: #ff0000;
     color: #7E4C0A;
     font-size: 24px;
