@@ -101,13 +101,9 @@ img{
     cursor:pointer;
 }
 
-.choice:hover{
+.choice:active{
     background-color: #f5f5f5;
 }
-
-.choice::active {
-    background-color: #fff;
-} 
 
 #result{
     display:none;
