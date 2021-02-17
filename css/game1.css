@@ -108,6 +108,7 @@ img{
     outline: none;
     border-image: none;
     border-style: solid;
+    margin: 0px
 }
 
 #result{
