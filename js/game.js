@@ -270,7 +270,7 @@ function updateQuestion(round){
     $("#questionImage").attr("src","src/assets/thumbnail-"+fillRound+".png");
     $("#questionText").html(questions[round].question);
     for(i=0;i<questions[round].choices.length;i++){
-        var choiceNode = "<div class='choice' data-score='"+questions[round].choices[i].score+"'>"+questions[round].choices[i].choiceText+"</div>";
+        var choiceNode = "<button class='choice' data-score='"+questions[round].choices[i].score+"'>"+questions[round].choices[i].choiceText+"</button>";
         $("#choices_container").append(choiceNode);
         
 
