@@ -3,7 +3,7 @@ var round = 0;
 var questions = [
     {
         "id":1,
-        "question":"最近三個月是否每一次性行為都有使用安全套(包括口交、陰道性交、肛交)?",
+        "question":"最近三個月是否每一次性行為都有使用安全套(包括口交、陰道性交、肛交)？",
         "choices":[
             {
                 "choiceText":"是",
@@ -11,14 +11,14 @@ var questions = [
             },
             {
                 "choiceText":"否",
-                "score":10
+                "score":90
             }
 
         ]
     },
     {
         "id":2,
-        "question":"你是否曾經接受過任何愛滋病/性病病毒檢查?",
+        "question":"你是否曾經接受過任何愛滋病/性病病毒檢查？",
         "choices":[
             {
                 "choiceText":"不曾接受過",
@@ -41,11 +41,11 @@ var questions = [
     },
     {
         "id":3,
-        "question":"最近三個月在性行為時有沒有出現安全套脫落的情況?",
+        "question":"最近三個月在性行為時有沒有出現安全套脫落的情況？",
         "choices":[
             {
                 "choiceText":"有",
-                "score":10
+                "score":90
             },
             {
                 "choiceText":"沒有",
@@ -56,11 +56,11 @@ var questions = [
     },
     {
         "id":4,
-        "question":"最近三個月在性行為時有沒有出現被人偷偷除下安全套的情況?",
+        "question":"最近三個月在性行為時有沒有出現被人偷偷除下安全套的情況？",
         "choices":[
             {
                 "choiceText":"有",
-                "score":10
+                "score":90
             },
             {
                 "choiceText":"沒有",
@@ -71,11 +71,11 @@ var questions = [
     },
     {
         "id":5,
-        "question":"最近三個月有沒有被人強迫進行不安全性行為?",
+        "question":"最近三個月有沒有被人強迫進行不安全性行為？",
         "choices":[
             {
                 "choiceText":"有",
-                "score":10
+                "score":90
             },
             {
                 "choiceText":"沒有",
@@ -86,7 +86,7 @@ var questions = [
     },
     {
         "id":6,
-        "question":"你認為如何得知對方感染愛滋病/性病病毒?",
+        "question":"你認為如何得知對方感染愛滋病/性病病毒？",
         "choices":[
             {
                 "choiceText":"皮膚有潰爛或紅疹",
@@ -113,7 +113,7 @@ var questions = [
     },
     {
         "id":7,
-        "question":"以下哪個可以傳播愛滋病/性病病毒?",
+        "question":"以下哪個可以傳播愛滋病/性病病毒？",
         "choices":[
             {
                 "choiceText":"蚊叮蟲咬",
@@ -136,7 +136,7 @@ var questions = [
     },
     {
         "id":8,
-        "question":"以下哪個是愛滋病/性病病毒的正確傳播途徑",
+        "question":"以下哪個是愛滋病/性病病毒的正確傳播途徑？",
         "choices":[
             {
                 "choiceText":"血液接觸",
@@ -159,7 +159,7 @@ var questions = [
     },
     {
         "id":9,
-        "question":"以下哪個方法能有效預防愛滋病/性病",
+        "question":"以下哪個方法能有效預防愛滋病/性病？",
         "choices":[
             {
                 "choiceText":"性交時使用一個未過期有品質保證的安全套",
@@ -182,7 +182,7 @@ var questions = [
     },
     {
         "id":10,
-        "question":"以下哪個方法會存有感染愛滋病/性病病毒風險?",
+        "question":"以下哪個方法會存有感染愛滋病/性病病毒風險？",
         "choices":[
             {
                 "choiceText":"體外射精",
@@ -205,7 +205,7 @@ var questions = [
     },
     {
         "id":11,
-        "question":"以下哪一項潤滑劑<span style=color:red;>不可以</span>與乳膠製安全套一起使用?",
+        "question":"以下哪一項潤滑劑<span style=color:red;>不可以</span>與乳膠製安全套一起使用？",
         "choices":[
             {
                 "choiceText":"水性",
@@ -228,7 +228,7 @@ var questions = [
     },
     {
         "id":12,
-        "question":"甚麼人需要進行性病測試?",
+        "question":"甚麼情況下需要進行性病測試？",
         "choices":[
             {
                 "choiceText":"曾與陌生人接吻",
