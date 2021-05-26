@@ -294,17 +294,17 @@ function checkResult(score){
         risk = 1;
         $("#riskLevel").html("低");
         $("#riskLevel").addClass("low");
-        $("#resultText").html("<p>您對<a href ='https://www.afrohealth.org.hk/hiv/aids-trivia' target='_blank'>性健康問題</a>有深入了解 / 性行為風險較低。記得每次性行為都使用安全套，而不論您在性行為時有沒有使用安全套，青鳥都建議定期進行性病 / 愛滋病快速測試 (一般是每三個月檢查一次)。<a href='https://www.afro.org.hk/work.php?id=96' target='_blank'>了解更多</a></p>");
+        $("#resultText").html("<p>您對<a href ='https://www.afrohealth.org.hk/hiv/aids-trivia' target='_blank'>性健康問題</a>有深入了解 / 性行為風險較低。記得每次性行為都使用安全套，而不論您在性行為時有沒有使用安全套，青鳥都建議定期進行性病 / 愛滋病快速測試 (一般是每三個月檢查一次)。<a href='https://www.afro.org.hk/work.php?id=100' target='_blank'>了解更多</a></p>");
     }else if(score<=91){
         risk = 2;
         $("#riskLevel").html("中");
         $("#riskLevel").addClass("mid");
-        $("#resultText").html("<p>您對性健康問題略知一二 / 性行為習慣仍存在風險，了解更多可<a href='https://www.afrohealth.org.hk/hiv/aids-trivia' target='_blank'>按此</a>。青鳥建議每次性行為都應使用安全套，如曾發生過不安全性行為，應儘快安排進行性病 / 愛滋病快速測試。如你有多位性伴侶，不論有沒有使用安全套，亦應每三個月進行定期檢查，以確保健康。</p><p>如你是女性性工作者，也可預約到青鳥到訪中心進行愛滋病 / 梅毒病毒測試，費用全免亦不需要真名登記，<a href='https://www.afro.org.hk/work.php?id=96' target='_blank'>詳情按此</a>。</p>");
+        $("#resultText").html("<p>您對性健康問題略知一二 / 性行為習慣仍存在風險，了解更多可<a href='https://www.afrohealth.org.hk/hiv/aids-trivia' target='_blank'>按此</a>。青鳥建議每次性行為都應使用安全套，如曾發生過不安全性行為，應儘快安排進行性病 / 愛滋病快速測試。如你有多位性伴侶，不論有沒有使用安全套，亦應每三個月進行定期檢查，以確保健康。</p><p>如你是女性性工作者，也可預約到青鳥到訪中心進行愛滋病 / 梅毒病毒測試，費用全免亦不需要真名登記，<a href='https://www.afro.org.hk/work.php?id=100' target='_blank'>詳情按此</a>。</p>");
     }else if(score>=92){
         risk = 3;
         $("#riskLevel").html("高");
         $("#riskLevel").addClass("high");
-        $("#resultText").html("<p>您對性健康知識不足 / 性行為風險極高，需要<a href='https://www.afrohealth.org.hk/hiv/aids-trivia' target='_blank'>多多了解</a>。青鳥建議每次性行為都應使用安全套，如曾發生過不安全性行為，應儘快安排進行性病 / 愛滋病快速測試。如你有多位性伴侶，不論有沒有使用安全套，亦應每三個月進行定期檢查，以確保健康。</p><p>如你是女性性工作者，也可預約到青鳥到訪中心進行愛滋病 / 梅毒病毒測試，費用全免亦不需要真名登記，<a href='https://www.afro.org.hk/work.php?id=96' target='_blank'>詳情按此</a>。</p>");
+        $("#resultText").html("<p>您對性健康知識不足 / 性行為風險極高，需要<a href='https://www.afrohealth.org.hk/hiv/aids-trivia' target='_blank'>多多了解</a>。青鳥建議每次性行為都應使用安全套，如曾發生過不安全性行為，應儘快安排進行性病 / 愛滋病快速測試。如你有多位性伴侶，不論有沒有使用安全套，亦應每三個月進行定期檢查，以確保健康。</p><p>如你是女性性工作者，也可預約到青鳥到訪中心進行愛滋病 / 梅毒病毒測試，費用全免亦不需要真名登記，<a href='https://www.afro.org.hk/work.php?id=100' target='_blank'>詳情按此</a>。</p>");
     }
     $("#resultImage").attr("src","src/assets/result-"+risk+".png")
     $("#question").hide();
