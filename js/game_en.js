@@ -280,17 +280,17 @@ function checkResult(score) {
     var risk;
     if (score <= 63) {
         risk = 1;
-        $("#riskLevel").html("低");
+        $("#riskLevel").html("Low");
         $("#riskLevel").addClass("low");
         $("#resultText").html("<p>Your knowledge about sexual health is sufficient / The risk level of your sexual behaviours is low. Remember use a condom for every sexual intercourse. AFRO recommends you test for HIV / STIs regularly (around every 3 months). <a href='https://www.afro.org.hk/work.php?id=100&lang_id=2' target='_blank'>Details</a></p>");
     } else if (score <= 91) {
         risk = 2;
-        $("#riskLevel").html("中");
+        $("#riskLevel").html("Medium");
         $("#riskLevel").addClass("mid");
         $("#resultText").html("<p>Your knowledge about sexual health is not completely accurate / The risk level of your sexual behaviours is medium. Therefore, you are advised to <a href='https://www.afrohealth.org.hk/en/what-is-sexually-transmitted-infections' target='_blank'>learn more</a> about it. AFRO recommends condom use for every sexual intercourse. If you have engaged in unprotected sexual intercourse, you should test for HIV / STIs as soon as possible. Meanwhile, in order to ensure your sexual health, in case you have multiple sexual partners (whether using a condom or not), you are strongly advised to have regular check up.</p><p>Female sex workers are welcome to come to AFRO’s drop-in centre to have free and anonymous HIV and Syphilis test. <a href='https://www.afro.org.hk/work.php?id=100&lang_id=2' target='_blank'>Details</a></p>");
     } else if (score >= 92) {
         risk = 3;
-        $("#riskLevel").html("高");
+        $("#riskLevel").html("High");
         $("#riskLevel").addClass("high");
         $("#resultText").html("<p>Your knowledge about sexual health is insufficient / The risk level of your sexual behaviours is high. Thus, you are advised to <a href='https://www.afrohealth.org.hk/en/what-is-sexually-transmitted-infections' target='_blank'>learn more</a> about it. AFRO recommends condom use for every sexual intercourse. If you have engaged in unprotected sexual intercourse, you should test for HIV and STIs as soon as possible. Meanwhile, in order to ensure your sexual health, in case you have multiple sexual partners (whether using a condom or not), you are strongly advised to have regular check up.</p><p>Female sex workers are welcome to come to AFRO’s drop-in centre to have free and anonymous HIV and Syphilis test. <a href='https://www.afro.org.hk/work.php?id=100&lang_id=2' target='_blank'>Details</a></p>");
     }
