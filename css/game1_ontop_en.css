@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body{
+    background-color:#000;
+
+    margin:0;
+    padding:0;
+    border:0;
+    /*background-image: url(../src/Game1-design1/render/game1-01.jpg);*/
+    background-size: cover;
+    width:100%;
+    height:100%;
+    background-color:#FFF2AC;
+    color:#7E4C0A;
+    font-family: 'Varela Round' !important;
+    font-weight: bold;
+    font-style: normal;
+    position: relative;
+}
+
+.choice {
+    background-color: #fff;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    width: 100%;
+    border-width: 0;
+    border-bottom: 2px solid #DFE0E1;
+    color: #7E4C0A;
+    font-size: 22px;
+    font-family: 'Varela Round'!important;
+    font-weight: bold;
+    font-style: normal;
+    outline: none;
+    margin: 0px
+}
+
+#progress_result_text{
+    width: 58px;
+    border-radius: 50px;
+    background-color: #dec29a;
+    color: white;
+    font-size: .9em;
+    padding: 6px 0px;
+    font-weight: unset;
+}
+
+#start_btn{
+    width: 172px;
+    top: 410px;
+    height:80px;
+    background-image: url(../src/assets/start-btn-en.png);
+    background-size: cover;
+    cursor:pointer;
+}
+#start_btn:hover{
+    background-image: url(../src/assets/start-btn-on-en.png);
+}
+
+#riskText{
+    text-align: center;
+    font-size:30px;
+}
+#riskLevel{
+    font-size: 54px;
+}
+
+#resultText{
+    margin: 20px;
+	line-height: 21px;
+    font-size: 16px;
+}

@@ -238,44 +238,43 @@ var questions = [{
     },
 ]
 
-$(function() {
-    $("#start_btn").click(function() {
+$(function(){
+    $("#start_btn").click(function(){
         $("#start_screen").hide();
     })
     updateQuestion(round);
 
 })
 
-function updateQuestion(round) {
+function updateQuestion(round){
     $("#choices_container").html("");
-    var fillRound = round + 1;
-    if (round + 1 < 10) {
-        fillRound = "0" + fillRound;
+    var fillRound = round+1;
+    if(round+1 <10){
+        fillRound = "0"+fillRound;
     }
     $(".dot").removeClass("active");
     $("#progress").children().find(".dot").eq(round).addClass("active");
-    $("#questionImage").attr("src", "src/assets/thumbnail-" + fillRound + ".png");
+    $("#questionImage").attr("src","../src/assets/thumbnail-"+fillRound+".png");
     $("#questionText").html(questions[round].question);
-    for (i = 0; i < questions[round].choices.length; i++) {
-        var choiceNode = "<button class='choice' data-score='" + questions[round].choices[i].score + "'>" + questions[round].choices[i].choiceText + "</button>";
+    for(i=0;i<questions[round].choices.length;i++){
+        var choiceNode = "<button class='choice' data-score='"+questions[round].choices[i].score+"'>"+questions[round].choices[i].choiceText+"</button>";
         $("#choices_container").append(choiceNode);
-
+        
 
     }
-    $(".choice").click(function() {
+    $(".choice").click(function(){
 
         score = score + parseInt($(this).attr("data-score"));
-
-        if (round == 11) {
+       
+        if(round == 11){
             checkResult(score);
-        } else {
+        }else{
             round++;
             updateQuestion(round);
         }
 
     })
 }
-
 function checkResult(score) {
     var risk;
     if (score <= 63) {
@@ -294,7 +293,7 @@ function checkResult(score) {
         $("#riskLevel").addClass("high");
         $("#resultText").html("<p>Your knowledge about sexual health is insufficient / The risk level of your sexual behaviours is high. Thus, you are advised to <a href='https://www.afrohealth.org.hk/en/what-is-sexually-transmitted-infections' target='_blank'>learn more</a> about it. AFRO recommends condom use for every sexual intercourse. If you have engaged in unprotected sexual intercourse, you should test for HIV and STIs as soon as possible. Meanwhile, in order to ensure your sexual health, in case you have multiple sexual partners (whether using a condom or not), you are strongly advised to have regular check up.</p><p>Female sex workers are welcome to come to AFRO’s drop-in centre to have free and anonymous HIV and Syphilis test. <a href='https://www.afro.org.hk/work.php?id=100&lang_id=2' target='_blank'>Details</a></p>");
     }
-    $("#resultImage").attr("src", "src/assets/result-" + risk + ".png")
+    $("#resultImage").attr("src","../src/assets/result-"+risk+".png")
     $("#question").hide();
     $("#choices").hide();
     $("#progress").hide();
