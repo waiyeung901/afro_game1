@@ -150,7 +150,7 @@ var questions = [{
     },
     {
         "id": 9,
-        "question": "Which of the following can prevent STIs?",
+        "question": "Which of the following can prevent HIV / STIs?",
         "choices": [{
                 "choiceText": "Using a new, undamaged, and unexpired condom",
                 "score": 3
@@ -172,7 +172,7 @@ var questions = [{
     },
     {
         "id": 10,
-        "question": "Which of the following situation(s) is with the risk of HIV/ STIs?",
+        "question": "Which of the following situation(s) is with the risk of HIV / STIs infection?",
         "choices": [{
                 "choiceText": "Extracorporeal ejaculation",
                 "score": 10
