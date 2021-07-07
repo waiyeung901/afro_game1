@@ -2,7 +2,7 @@ var score = 0;
 var round = 0;
 var questions = [{
         "id": 1,
-        "question": "Did you use a condom for every sexual intercourse with clients in the past 3 months (including vaginal, oral, anal sex)?",
+        "question": "Did you use a condom for every sexual intercourse with clients in the past 3 months (including vaginal, oral and anal sex)?",
         "choices": [{
                 "choiceText": "Yes",
                 "score": 3
@@ -172,7 +172,7 @@ var questions = [{
     },
     {
         "id": 10,
-        "question": "Which of the following situation(s) is with the risk of HIV / STIs infection?",
+        "question": "Which of the following situations is with the risk of HIV / STIs infection?",
         "choices": [{
                 "choiceText": "Extracorporeal ejaculation",
                 "score": 10
@@ -222,7 +222,7 @@ var questions = [{
                 "score": 10
             },
             {
-                "choiceText": "Having an unprotected sexual intercourse or not using a condom properly",
+                "choiceText": "Having unprotected sex or not using a condom properly",
                 "score": 3
             },
             {
@@ -281,7 +281,7 @@ function checkResult(score) {
         risk = 1;
         $("#riskLevel").html("Low");
         $("#riskLevel").addClass("low");
-        $("#resultText").html("<p>Your knowledge about sexual health is sufficient / The risk level of your sexual behaviours is low. Remember use a condom for every sexual intercourse. AFRO recommends you test for HIV / STIs regularly (around every 3 months). <a href='https://www.afro.org.hk/work.php?id=100&lang_id=2' target='_blank'>Click here for details</a></p>");
+        $("#resultText").html("<p>Your knowledge about sexual health is sufficient / The risk level of your sexual behaviours is low. Remember to use a condom for every sexual intercourse. AFRO recommends you to test for HIV / STIs regularly (around every 3 months). <a href='https://www.afro.org.hk/work.php?id=100&lang_id=2' target='_blank'>Click here for details</a></p>");
     } else if (score <= 91) {
         risk = 2;
         $("#riskLevel").html("Medium");
